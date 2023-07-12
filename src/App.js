@@ -102,6 +102,7 @@ function App() {
   useEffect(() => {
     fetchWeather();
     localStorage.setItem("location", state.location);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [state.location]);
 
   return (

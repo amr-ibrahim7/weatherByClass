@@ -61,6 +61,7 @@ function App() {
     if (state.location.length < 2) {
       dispatch({ type: "weatherChange", payload: {} });
     }
+    //
 
     try {
       dispatch({ type: "isLoadingChange", payload: true });
